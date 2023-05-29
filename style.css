@@ -1,0 +1,594 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*>* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.142), rgba(0, 0, 0, 0.142)), url("Squiggly-Pattern.gif");
+
+  /* Control the height of the image */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+
+/* Add styles to the form container */
+.container {
+  margin-right: 500px;
+  height: 520px;
+  position: absolute;
+  right: 0;
+  margin: 50px;
+  max-width: 510px;
+  padding: 16px;
+  background-color: rgb(250, 243, 243);
+}
+
+.loginhead {
+  font-size: 50px;
+  color: blue;
+  margin-top: 10px;
+}
+
+.loginhead1 {
+  font-size: 20px;
+
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.mainhead {
+  background-color: darkblue;
+}
+
+.navbar {
+  font-size: 25px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ddd;
+  height: 50px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #04AA6D;
+}
+
+.active {
+  background-color: #576d9b;
+  width: 150px;
+}
+
+
+li:last-child {
+  border-right: none;
+}
+
+.infocontainer {
+  background-color: blue;
+  height: 45vw;
+  width: 50vw;
+}
+
+.bg-img textbox {
+  position: absolute;
+  background-color: transparent;
+  top: 69px;
+  font-size: 25px;
+
+  overflow: hidden;
+  left: 220px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.textbox .text{
+    position: relative;
+    color: #2351cf;
+    font-size: 30px;
+    font-weight: 600;
+}
+.textbox .text.first-text{
+    color: rgb(12, 242, 31); 
+}
+.sec-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 500%;
+  width: 100%;
+  color:#dcf537;
+  background-color: transparent;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+
+  100% {
+    left: 0%;
+  }
+}
+
+.container2 {
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Size of the border */
+  --border-size: 0.5rem;
+
+  /* Create a dotted border */
+  border: var(--border-size) dotted lime;
+
+  /* Create two background layers:
+   1. A white semi-transparent
+   2. A layer with the colored boxes
+ */
+  background-image:
+    linear-gradient(to right, rgb(255 255 255 / 0.5), rgb(255 255 255 / 0.5)),
+
+    conic-gradient(from 45deg,
+      #d53e33 0deg 90deg,
+      #fbb300 90deg 180deg,
+      #377af5 180deg 270deg,
+      #399953 270deg 360deg);
+  background-origin: border-box;
+  background-clip:
+    padding-box,
+    /* Clip white semi-transparent to the padding-box */
+    border-box
+    /* Clip colored boxes to the border-box (default) */
+  ;
+  border: 0.3rem dotted transparent;
+
+}
+
+.d1 {
+  font-size: 40px;
+  height: 200px;
+  width: 50%;
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 70px;
+  padding-left: 80px;
+  margin-top: 20px;
+}
+
+.heading1 {
+  margin-top: -36px;
+}
+
+.d2 {
+  font-size: 20px;
+
+}
+
+.d3 {
+  text-align: center;
+  padding-top: 43px;
+  font-size: 32px;
+}
+
+.d4 {
+  display: flex;
+}
+
+.card {
+  flex: 1;
+  overflow: hidden;
+}
+
+.card img {
+  object-fit: cover;
+  filter: grayscale(1);
+  flex-grow: 500px;
+}
+
+.card:hover {
+  flex: 3;
+}
+
+.card:hover img {
+  filter: none;
+}
+
+/* .d5{
+    padding-left: 44px;
+    font-size: 24px;
+    color: #ddd;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+/* .quotes{
+    background-color: white;
+  } */
+
+.explore {
+  background-color: #ddd;
+}
+
+.link1 {
+  text-decoration: none;
+  color: #ddd;
+}
+
+:root {
+  --color-dark: #ddd;
+  --color-secondary-dark: #464C70;
+  --color-primary: #EE709D;
+  --color-text: #8297E2;
+  --color-light: rgb(117, 210, 117);
+}
+
+.d5 {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+}
+
+.board {
+  max-width: 987px;
+  width: 100%;
+  height: 473px;
+  background-color: var(--color-dark);
+  border-radius: 8px;
+  padding: 4em 0;
+  text-align: center;
+  margin-bottom: 28px;
+
+}
+
+.textlight {
+  color: black;
+  font-size: 38px;
+}
+
+.swiper {
+  width: 600px;
+  height: auto;
+}
+
+.flex {
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.comments {
+  background-color: var(--color-light);
+  padding: 1.5em 2em;
+  width: 50%;
+  border-radius: 5px;
+  font-size: 18px;
+  position: relative;
+}
+
+.comments::after {
+  content: '';
+  position: absolute;
+  bottom: -19px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  z-index: -99;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+
+}
+
+.profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid var(--color-primary);
+  margin: 10px 0;
+}
+
+.profile>a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.profile span {
+  color: var(--color-text);
+  font-size: .8em;
+  font-size: 20px;
+}
+
+.swiper-button-prev,
+swiper-button-next {
+  color: var(--color-text);
+  display: none;
+}
+
+/* @media(min-width:320px){
+  .board{
+    width: auto;
+  }
+  .swiper{
+    width: 320px;
+  }
+  .board> h1,p{
+    padding: 0 2em;
+  }
+} */
+
+/* @media(min-width:768px){
+  .board{
+    width: 100%;
+  }
+  .swiper{
+    width: 600px;
+  }
+  .swiper-button-prev,swiper-button-next{
+    display: initial;
+  }
+} */
+
+.footer-distributed {
+  background: #666;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #222;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 400;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: lightseagreen;
+  text-decoration: none;
+  ;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight: 300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+}
